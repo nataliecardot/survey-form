@@ -18,7 +18,9 @@ body {
   padding: 10px;
 }
 
+/* Needed to center form content (form-left and form-right) */
 .inner-container {
+  /* Centers form content */
   text-align: center;
 }
 
@@ -29,6 +31,7 @@ body {
 
 .description {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -40,41 +43,42 @@ form {
   text-align: right;
   width: 30%;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 10px
 }
 
 .form-right {
   display: inline-block;
   text-align: left;
-  width: 48%;
+  width: 40%;
   vertical-align: middle;
 }
 
 .form-item {
-  margin: 2rem 0;
+  margin: 1.2rem 0;
 }
 
 input {
-  padding: 3px;
+  padding: 4px;
   border-radius: 2px;
+  border: none;
 }
 
 /* Employment status and marital status dropdowns */
 .dropdown {
-  padding: 3px;
+  padding: 4px;
+  border: none;
+  border-radius: 2px;
 }
 
 /* Likelihood of recommending services radio buttons */
 .radio-button {
- margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 textarea {
   padding: 5px;
-}
-
-.button-div {
-  text-align: center;
+  height: 4rem;
+  border: none;
 }
 
 button {
@@ -85,6 +89,11 @@ button {
   font-size: 1em;
   height: 40px;
   width: 96px;
-  margin: 10px;
-  border: 0px solid;
+  margin: 1.2rem 0 2rem 0;
+  border: none;
+}
+
+button:hover {
+  background-color: #b51c84;
+  transform: scale(1.1);
 }
