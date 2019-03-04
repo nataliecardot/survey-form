@@ -1,0 +1,90 @@
+body {
+  /* If a font name contains white space, it must be quoted */
+  font-family: "Work Sans";
+  background-color: #754264;
+}
+
+/* Tells the browser to account for any border and padding in the values specified for an element's width and height */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #d1bdcb;
+  margin: 1em auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+}
+
+.inner-container {
+  text-align: center;
+}
+
+.title {
+  font-family: Roboto;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.form-left {
+  display: inline-block;
+  text-align: right;
+  width: 30%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.form-right {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.form-item {
+  margin: 2rem 0;
+}
+
+input {
+  padding: 3px;
+  border-radius: 2px;
+}
+
+/* Employment status and marital status dropdowns */
+.dropdown {
+  padding: 3px;
+}
+
+/* Likelihood of recommending services radio buttons */
+.radio-button {
+ margin: 8px 0;
+}
+
+textarea {
+  padding: 5px;
+}
+
+.button-div {
+  text-align: center;
+}
+
+button {
+  background-color: #502e45;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}

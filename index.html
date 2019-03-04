@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <!-- Ensures proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Forces IE 8/9/10 to use its latest rendering engine -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+</head>
+
+<body>
+  <div class="container">
+    <!-- IDs are just used to pass freeCodeCamp project tests -->
+    <h1 id="title" class="title">Customer Satisfaction Survey</h1>
+    <p id="description" class="description">Tell us about your experience.</p>
+
+    <div class="inner-container">
+      <form id="survey-form">
+
+      <div class="form-item">
+        <!-- label element ties meaning to item and makes form more readable. The for attribute on a label tag explicitly associates that label with form control and is used by screen readers -->
+        <label for="name" id="name-label" class="form-left">* Name:</label>
+        <input autofocus class="form-right" type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-item">
+        <label for="email" id="email-label" class="form-left">* Email:</label>
+        <input type="email" class="form-right" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-item">
+        <label for="number" id="number-label" class="form-left">* Age:</label>
+        <input type="number" class="form-right" id="number" min="1" max="125" placeholder="Enter your age" required>
+      </div>
+
+      <div class="form-item">
+        <label for="current-pos" class="form-left">* Which best describes your employment status?</label>
+        <select id="current-pos" class="dropdown form-right" required>
+          <option disabled>Select an option</option>
+          <!-- value attribute indicates what is sent to the server -->
+          <option value="student">Student</option>
+          <option value="full-time">Employed full-time</option>
+          <option value="part-time">Employed part-time</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="marital-status" class="form-left">* What is your marital status?</label>
+        <select id="marital-status" class="dropdown form-right" required>
+          <option disabled>Select an option</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="partnership">In a domestic partnership</option>
+          <option value="divorced">Divorced</option>
+          <option value="separated">Separated</option>
+          <option value="widowed">Widowed</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label class="form-left">* How likely are you to recommend our services?</label>
+        <div class="form-right">
+          <div>
+            <!-- To group radio buttons, they must all have the same name value. This allows only one to be selected at a time and applies required to the whole group -->
+            <input name="recommend" class="radio-button" type="radio" id="highly-likely" required>
+            <label for="highly-likely">Highly likely</label>
+          </div>
+          <div>
+            <input name="recommend" class="radio-button" type="radio" id="maybe">
+            <label for="maybe">Maybe</label>
+          </div>
+          <div>
+            <input name="recommend" class="radio-button" type="radio" id="unsure">
+            <label for="unsure">Unsure</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-item">
+        <label for="comment" class="form-left">Any comments or suggestions?</label>
+        <textarea class="form-right" id="comment" placeholder="Enter additional feedback"></textarea>
+      </div>
+
+      <div class="button-div">
+        <button class="submit-button" type="submit" id="submit">Submit</button>
+      </div>
+
+      </form>
+    </div>
+  </div> <!-- container -->
+</body>
+</html>
