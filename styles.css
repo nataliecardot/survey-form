@@ -59,14 +59,14 @@ form {
 }
 
 input {
-  padding: 4px;
+  padding: 5px;
   border-radius: 2px;
   border: none;
 }
 
 /* Employment status and marital status dropdowns */
 .dropdown {
-  padding: 4px;
+  padding: 5px;
   border: none;
   border-radius: 2px;
 }
@@ -80,6 +80,7 @@ textarea {
   padding: 5px;
   height: 4rem;
   border: none;
+  border-radius: 2px;
 }
 
 button {
@@ -97,4 +98,34 @@ button {
 button:hover {
   background-color: #b51c84;
   transform: scale(1.1);
+}
+
+/* Special styling for viewports up to 767px wide (landscape phones) */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  .title {
+    /* Default: 32px/2rem */
+    font-size: 1.6rem;
+  }
+
+  .description {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .form-left {
+    width: 90%;
+    text-align: left;
+  }
+
+  .form-right {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  input, .dropdown {
+    padding: 7px;
+  }
 }
